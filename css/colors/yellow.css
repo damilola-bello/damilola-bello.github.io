@@ -1,0 +1,31 @@
+#bs-example-navbar-collapse-1 .navbar-nav a:hover {
+	background-color: #edb702;
+}
+.modal-header {
+	border-bottom-color: #edb702;
+}
+.modal-footer {
+	border-top-color: #edb702;
+}
+.project-features li::before {
+	background-color: #edb702;
+}
+.skill-list li::before, .description-details li::before {color: #edb702; }
+/*.myskill_area .skill_item_inner .single_skill .progress .progress-bar {
+	background: #fec608;
+	background-image: linear-gradient(to right, #edd584 , #fec608);
+}*/
+
+/*
+.main_menu .navbar-default .navbar-collapse .navbar-nav li:hover a, .main_menu .navbar-default .navbar-collapse .navbar-nav li.active a {
+	color: #44dd61;
+}
+.main_menu .navbar-default .navbar-collapse .navbar-nav li a::before {
+	background: #44dd61;
+}
+.main_menu .navbar-default .navbar-collapse .navbar-nav li.submenu .dropdown-menu li a::before {
+	background: #44dd61;
+}
+.main_menu .navbar-default .navbar-collapse .navbar-nav li.submenu .dropdown-menu li a {
+	color: #44dd61;
+}*/

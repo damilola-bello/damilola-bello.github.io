@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" 
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<url>
+		<loc>https://bellodamilola.herokuapp.com/</loc>
+		<lastmod>2018-09-12T18:20:28+00:00</lastmod>
+		<priority>1.00</priority>
+	</url>
+	<url>
+		<loc>https://bellodamilola.herokuapp.com/Resume.docx</loc>
+		<lastmod>2018-09-10T00:22:19+00:00</lastmod>
+		<priority>0.80</priority>
+	</url>
+</urlset>

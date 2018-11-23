@@ -1,19 +1,837 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-MFGJ2T3');</script>
-  <!-- End Google Tag Manager -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/fav-icon.png" type="image/x-icon">
+    <!-- Google Tag Manager-->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-NRCVJGZ');</script>
+    <!-- End Google Tag Manager-->
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags-->
+    <title>Damilola Bello - Portfolio</title>
+    <!-- Icon css link-->
+    <link href="vendors/material-icon/css/materialdesignicons.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="vendors/linears-icon/style.css" rel="stylesheet">
+    <!-- Bootstrap-->
+    <!--link(href='https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css', rel='stylesheet')-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Extra plugin css-->
+    <link href="vendors/owl-carousel/assets/owl.carousel.css" rel="stylesheet">
+    <link href="vendors/animate-css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/colors/past.css" title="past">
+    <link rel="alternate stylesheet" href="css/colors/yellow.css" title="yellow">
+    <link rel="alternate stylesheet" href="css/colors/orange.css" title="orange">
+    <link rel="alternate stylesheet" href="css/colors/pink.css" title="pink">
+    <link rel="alternate stylesheet" href="css/colors/violet.css" title="violet">
+    <link rel="alternate stylesheet" href="css/colors/blue.css" title="blue">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics
+    script(async='', src='https://www.googletagmanager.com/gtag/js?id=UA-125329006-1')
+    script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-125329006-1');
+    -->
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <!-- My styles overwrite-->
+    <link rel="stylesheet" href="scss/mystyles.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries-->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file://-->
+    <!--if lt IE 9
+    script(src='https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js')
+    script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+    -->
   </head>
-  <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MFGJ2T3"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    <p>Hello World!</p>
+  <body class="dark_bg" data-spy="scroll" data-target="#bs-example-navbar-collapse-1" data-offset="80" data-scroll-animation="true">
+    <!-- Google Tag Manager (noscript)-->
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NRCVJGZ" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript)-->
+    <div id="preloader">
+      <div id="preloader_spinner">
+        <div class="spinner"></div>
+      </div>
+    </div>
+    <div id="fullImageWrapper"><i class="fa fa-arrow-left full-arrow full-left-arrow" title="Previous"></i><i class="fa fa-arrow-right full-arrow full-right-arrow" title="Next"></i>
+      <div id="fullImageBox">
+        <div id="closeImageBox"><span id="closeImage" title="Close">×</span></div>
+        <div id="fullImage"><img src="">
+          <div id="fullImageDetails"></div>
+        </div>
+      </div>
+    </div>
+    <!-- ================ Header Area =================-->
+    <header class="header_area">
+      <div class="container header_content">
+        <nav class="navbar navbar-default">
+          <!-- Brand and toggle get grouped for better mobile display-->
+          <div class="navbar-header">
+            <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand home-brand" href="#about"><span class="my-brand-name">Damilola Bello</span></a>
+          </div>
+          <!-- Collect the nav links, forms, and other content for toggling-->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active"><a class="main-nav-el-top" href="#about">ABOUT ME </a></li>
+              <li class="active"><a class="main-nav-el-top" href="#mystory">MY STORY</a></li>
+              <li><a class="main-nav-el-top" href="#skill">Skill</a></li>
+              <li><a class="main-nav-el-top" href="#education">Education</a></li>
+              <li><a class="main-nav-el-top" href="#portfolio">PORTFOLIO</a></li>
+              <li><a class="main-nav-el-top" href="#contact">CONTACT</a></li>
+            </ul>
+          </div>
+          <!-- /.navbar-collapse-->
+        </nav>
+      </div>
+    </header>
+    <!-- ================End Footer Area =================-->
+    <!-- ================Total container Area =================-->
+    <div class="container main_container">
+      <div class="content_inner_bg row m0">
+        <!--<div class="pos-right">
+          <div id="google_translate_element"></div>
+          <script type="text/javascript">function googleTranslateElementInit() { new google.translate.TranslateElement({pageLanguage: 'en', gaTrack: true, gaId: 'UA-125329006-1'}, 'google_translate_element'); }</script>
+          <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        </div>-->
+        <section class="about_person_area pad" id="about">
+          <div class="row">
+            <div class="col-md-5">
+              <div class="person_img"><img class="portrait-image img-thumbnail" src="img/member/my-portrait.jpg" alt="My portrait image"><a class="download_btn" href="Resume.docx"><span>Download Resume</span></a></div>
+            </div>
+            <div class="col-md-7">
+              <div class="row person_details">
+                <h1 class="page-title"><span>Damilola Bello</span></h1>
+                <h4>Software Developer</h4>
+                <p class="summary"> I am an ambitious software developer/fullstack web developer with robust practical knowledge in web technologies and android mobile app development.<br> I am very self-motivated and passionate about providing innovative solutions through the integration of my programming skills and knowledge.<br> I am also result-oriented, resourceful and I possess the requisite soft skills to work effectively as a valuable team player in ensuring set goal and objectives are met promptly, I am also very adaptable (to the ever changing IT environment) and passionate about learning and incorporating new technologies and programming languages into my work.<br><br> Coding is like a devotion to me, once I set out to build an app, I put in my all to make sure the requirements are met right ahead of schedule.</p>
+                <div class="person_information">
+                  <ul>
+                    <li>Address :</li>
+                    <li>Phone :</li>
+                  </ul>
+                  <ul class="about_details">
+                    <li>Kitchener, ON, Canada.</li>
+                    <li>+1 437-779-9250</li>
+                  </ul>
+                </div>
+                <ul class="social_icon">
+                  <li><a class="linkedin-icon" href="https://linkedin.com/in/damilola-bello" target="_blank" title="LinkedIn"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="mystory_area pad" id="mystory">
+          <div class="main_title">
+            <h2>My Story</h2>
+          </div>
+          <div class="col">
+            <p class="story-topic">Intro</p>
+            <p class="story-details">Born and raised in Nigeria, West Africa. Growing up in Nigeria was memorable, the fighting spirit was something I had to make part and parcel of me. The hustle and bustle in Nigeria is a norm. The most challenging part was finding a way to stay out of trouble, be creative and industrous while living in an environment with lots of vices around, average daily electricity supply of about 0-3 hours, horrendous roads and the likes.<br>When I couldn't code because of the obvious power issue, I spent my time raising catfishes, poultry and planting vegetables etc.</p>
+            <p class="story-topic">Journey Into Technology </p>
+            <p class="story-details">I wasn't so privileged to use Computers growing up, even though my Dad had a huge computer (Windows 95) on his reading desk with lots of floppy disks around, I never knew how to use a computer, partly because we had no electricity (which is so scare in Nigeria) and whenever we did have electricity, my Dad would be using it do his work. <br>Toward the end of my High School education we were taught BASIC programming language, I found it so interesting, I noticed I enjoyed the flowcharts too and the flow of logic, programming was so interesting then. <b>We wrote code on a piece of paper for quizzes and exams in high school then because we had no computers to run the code.</b><br>I chose to study Computer Science in University, <b>even though up till that moment (August 2010) I never had a computer, I had no email account, I couldn't use a computer, but I was fascinated about having a flowchart or logic on paper and making it a reality with few lines of code.</b><br>Few days before going to the University I got a Laptop. During the first week of lectures I wrote my first program using MY OWN Laptop and I have never stopped coding since then.<br>I learnt a lot in the School and did lots of projects too. Hangman Game (Visual Basic), Computer Assisted Instructor (C), Prototype Auction System (PHP, MySQL) and lots more.</p>
+            <p class="story-topic">Hobbies and Interests</p>
+            <p class="story-details">I love coding and thinking of logic, there's nothing that makes me happier; I love gardening; I watch and listen to news everyday; I enjoy engaging in meaningful discussions about culture, politics, religion name it; Lastly I love learning, I can learn from a one-year old as long as I find something worth learning and emulating.<br>I am also a very good teacher.</p>
+            <div class="story-images">
+              <div class="story-image-box col-md-10"><img class="img-thumbnail" src="img/story/me_teaching_pupils_math.jpg" alt="Image of me teaching High School pupils Math in  Nigeria"><small class="caption">Me teaching High School Pupils Math in Nigeria few years ago.</small></div>
+            </div>
+          </div>
+        </section>
+        <section class="myskill_area pad" id="skill">
+          <div class="main_title">
+            <h2>Skill Set</h2>
+          </div>
+          <div class="row">
+            <div class="col-md-6 wow skill-group fadeInUp animated">
+              <div class="skill_text">
+                <h4>Web development Skills</h4>
+                <ul class="skill-list">
+                  <li>PHP & MySQL</li>
+                  <li>HTML5 & CSS3</li>
+                  <li>JavaScript</li>
+                  <li>React, Angular, Knockoutjs, Nodejs</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6 wow skill-group fadeInUp animated">
+              <div class="skill_text">
+                <h4>Web Design Skills</h4>
+                <ul class="skill-list">
+                  <li>Creative Design</li>
+                  <li>Photoshop</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 wow skill-group fadeInUp animated">
+              <div class="skill_text">
+                <h4>Other Skills/Programming Languages</h4>
+                <ul class="skill-list">
+                  <li>Java</li>
+                  <li>C/C++</li>
+                  <li>Android development</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="education_area pad" id="education">
+          <div class="main_title">
+            <h2>Education</h2>
+          </div>
+          <div class="education_inner_area">
+            <div class="education_item wow fadeInUp animated" data-line="S">
+              <h6>2004-2010</h6>
+              <h4>Secondary School</h4>
+              <h5>Holy Child Catholic Secondary School</h5>
+              <p>Secondary School Leaving Certificate, West African Senior School Certificate.</p>
+            </div>
+            <div class="education_item wow fadeInUp animated" data-line="U">
+              <h6>2010-2014</h6>
+              <h4>University</h4>
+              <h5>Babcock University</h5>
+              <p>B.Sc. - Computer Science.</p>
+            </div>
+            <div class="education_item wow fadeInUp animated" data-line="C">
+              <h6>2017-2018</h6>
+              <h4>College</h4>
+              <h5>Conestoga College</h5>
+              <p>Ontario College Graduate Certificate - Web Design and Development.</p>
+            </div>
+          </div>
+        </section>
+        <section class="portfolio_area pad" id="portfolio">
+          <div class="main_title">
+            <h2>Portfolio</h2>
+          </div>
+          <div class="porfolio_menu">
+            <ul class="causes_filter">
+              <li class="active" data-filter="*"><a href="">All</a></li>
+              <li data-filter=".web"><a href="">Web</a></li>
+              <li data-filter=".mobile"><a href="">Mobile</a></li>
+            </ul>
+          </div>
+          <div class="row">
+            <div class="portfolio_list_inner">
+              <div class="col-md-4 web portfolio_item_wrapper">
+                <div class="portfolio_item" id="todo">
+                  <div class="portfolio_img"><i class="fa fa-angle-left arrow left-arrow" title="Previous"></i><img src="img/portfolio/todo-1.PNG" alt=""><i class="fa fa-angle-right arrow right-arrow" title="Next"></i></div>
+                  <div class="portfolio_title">
+                    <h4>Todo</h4>
+                    <h5>Web</h5><span class="more" data-toggle="modal" data-target="#todoModal" id="todo_More">See More &raquo;</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Todo Modal-->
+              <div class="modal fade" id="todoModal" role="dialog">
+                <div class="modal-dialog">
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button class="close modal-close" type="button" data-dismiss="modal" title="Close">×</button>
+                      <h4 class="modal-title project-name">Todo</h4>
+                    </div>
+                    <div class="modal-body">
+                      <div class="project-content-box">
+                        <div class="project-image-box"><img class="img-thumbnail project-details-image" src="img/portfolio/todo-1.PNG">
+                          <div class="image-arrow image-arrow-left fa fa-angle-left" title="Previous"></div>
+                          <div class="image-arrow image-arrow-right fa fa-angle-right" title="Next"></div>
+                          <div class="image-nav-wrapper">
+                            <div class="image-nav-box"><span class="image-nav active-nav" data-image-index="1"></span><span class="image-nav" data-image-index="2"></span><span class="image-nav" data-image-index="3"></span></div>
+                          </div>
+                        </div>
+                        <div class="project-text">
+                          <div class="project-description">
+                            <p class="description-header">Project Description</p>
+                            <p class="description-details">Organises your Todo tasks into groups, you can customise task groups to have unique colour themes and also adjust the priority (Normal or high).<br><b>Some of its features are listed below:</b></p>
+                            <ul class="description-details project-features">
+                              <li>A single-page application that makes use of modals and AJAX requests on every CRUD operation without refreshing the page.</li>
+                              <li>There's the option to set due dates to task items. A <b>"DUE"</b> icon appears on the top right of tasks that are due.</li>
+                              <li>Search field to search based on task items or groups.</li>
+                              <li>Sorts and arranges the groups and tasks alphabetically on load and when a new group/task is added.</li>
+                              <li>You can have a look at the summary of your task groups (A tree diagram of all your groups and tasks; A bar chart showing you what groups have what color themes) using SVG and d3.js Library.</li>
+                              <li>High Priority groups have a red exclamation icon on the top-right corner to let the user identify it.</li>
+                              <li>Clean and easy to use with legible fonts and adequate white spacing.</li>
+                            </ul>
+                          </div>
+                          <div class="project-languages">
+                            <p class="description-header">Project Languages</p>
+                            <ul class="description-details language-list">
+                              <li>Javascript</li>
+                              <li>MEAN (MongoDB, ExpressJS, AngularJS, NodeJS)</li>
+                              <li>d3.js</li>
+                              <li>HTML5/CSS3</li>
+                            </ul>
+                          </div>
+                          <p class="project-link-box"><a class="see-project-link" href="https://my-todolists-app.herokuapp.com" target="_blank">Click here to see Todo &raquo;</a></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-default modal-close" type="button" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mobile portfolio_item_wrapper">
+                <div class="portfolio_item" id="todo_mobile">
+                  <div class="portfolio_img"><i class="fa fa-angle-left arrow left-arrow" title="Previous"></i><img src="img/portfolio/todo-mobile-1.PNG" alt="Todo Project Image"><i class="fa fa-angle-right arrow right-arrow" title="Next"></i></div>
+                  <div class="portfolio_title">
+                    <h4>Todo (Android App)</h4>
+                    <h5>Mobile</h5><span class="more" data-toggle="modal" data-target="#todoMobileModal" id="todoMobile_More">See More &raquo;</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Todo Mobile App Modal-->
+              <div class="modal fade" id="todoMobileModal" role="dialog">
+                <div class="modal-dialog">
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button class="close modal-close" type="button" data-dismiss="modal" title="Close">×</button>
+                      <h4 class="modal-title project-name">Todo<small class="small">[Android App]</small></h4>
+                    </div>
+                    <div class="modal-body">
+                      <div class="project-content-box">
+                        <div class="project-image-box"><img class="img-thumbnail project-details-image" src="img/portfolio/todo-mobile-1.PNG">
+                          <div class="image-arrow image-arrow-left fa fa-angle-left" title="Previous"></div>
+                          <div class="image-arrow image-arrow-right fa fa-angle-right" title="Next"></div>
+                          <div class="image-nav-wrapper">
+                            <div class="image-nav-box"><span class="image-nav active-nav" data-image-index="1"></span><span class="image-nav" data-image-index="2"></span><span class="image-nav" data-image-index="3"></span></div>
+                          </div>
+                        </div>
+                        <div class="project-text">
+                          <div class="project-description">
+                            <p class="description-header">Project Description</p>
+                            <p class="description-details">Organises your Todo tasks into groups, you can customise task groups to have unique colour themes and also adjust the priority (Normal or high).<br><b>Some of its features are listed below:</b></p>
+                            <ul class="description-details project-features">
+                              <li>Fast and swipeable Login and Signup pages.</li>
+                              <li>There's the option to set due dates to task items.</li>
+                              <li>Sorts and arranges the groups and tasks alphabetically on load and when a new group/task is added.</li>
+                              <li>High Priority groups have a red exclamation icon on the group name menu item in the navigation drawer.</li>
+                              <li>Swipe through task items within task groups.</li>
+                              <li>Responsive.</li>
+                              <li>Clean and easy to use with legible fonts and adequate white spacing.</li>
+                            </ul>
+                          </div>
+                          <div class="project-languages">
+                            <p class="description-header">Project Languages</p>
+                            <ul class="description-details">
+                              <li>Java</li>
+                              <li>Android</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-default modal-close" type="button" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 web portfolio_item_wrapper">
+                <div class="portfolio_item" id="word_counter">
+                  <div class="portfolio_img"><i class="fa fa-angle-left arrow left-arrow" title="Previous"></i><img src="img/portfolio/word-counter-1.PNG" alt="Word Counter Project Image"><i class="fa fa-angle-right arrow right-arrow" title="Next"></i></div>
+                  <div class="portfolio_title">
+                    <h4>Word Counter</h4>
+                    <h5>Web</h5><span class="more" data-toggle="modal" data-target="#wordCounterModal" id="wordCounter_More">See More &raquo;</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Word Counter Modal-->
+              <div class="modal fade" id="wordCounterModal" role="dialog">
+                <div class="modal-dialog">
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button class="close modal-close" type="button" data-dismiss="modal" title="Close">×</button>
+                      <h4 class="modal-title project-name">Word Counter</h4>
+                    </div>
+                    <div class="modal-body">
+                      <div class="project-content-box">
+                        <div class="project-image-box"><img class="img-thumbnail project-details-image" src="img/portfolio/word-counter-1.PNG">
+                          <div class="image-arrow image-arrow-left fa fa-angle-left" title="Previous"></div>
+                          <div class="image-arrow image-arrow-right fa fa-angle-right" title="Next"></div>
+                          <div class="image-nav-wrapper">
+                            <div class="image-nav-box"><span class="image-nav active-nav" data-image-index="1"></span><span class="image-nav" data-image-index="2"></span><span class="image-nav" data-image-index="3"></span></div>
+                          </div>
+                        </div>
+                        <div class="project-text">
+                          <div class="project-description">
+                            <p class="description-header">Project Description</p>
+                            <p class="description-details">Copy and paste or type into the text area and the app counts and gives you a breakdown of all characters and keywords in your text and how often they appear.<br><b>Some of its features are listed below:</b></p>
+                            <ul class="description-details project-features">
+                              <li>Displays the number of words, characters, paragraphs and spaces.</li>
+                              <li>Makes use of SVG Word cloud to show the intensity of the frequency of words in the text area. The more occurrence the bigger and bolder the word in the word cloud.</li>
+                              <li>Displays the frequency of the alphabets.</li>
+                              <li>Displays the top ten most frequent words.</li>
+                              <li>Displays the top ten most frequent two words that appeared side by side.</li>
+                              <li>Displays the top ten most frequent three words that appeared side by side.</li>
+                              <li>Easy to use and fully responsive.</li>
+                            </ul>
+                          </div>
+                          <div class="project-languages">
+                            <p class="description-header">Project Languages</p>
+                            <ul class="description-details">
+                              <li>Javascript</li>
+                              <li>HTML5/CSS3</li>
+                            </ul>
+                          </div>
+                          <p class="project-link-box"><a class="see-project-link" href="http://bellodamilola.altervista.org/wordcounter/index.html" target="_blank">Click here to see Word Counter &raquo;</a></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-default modal-close" type="button" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 web portfolio_item_wrapper">
+                <div class="portfolio_item" id="countries_api">
+                  <div class="portfolio_img"><i class="fa fa-angle-left arrow left-arrow" title="Previous"></i><img src="img/portfolio/countries-1.PNG" alt="Countries Project Image"><i class="fa fa-angle-right arrow right-arrow" title="Next"></i></div>
+                  <div class="portfolio_title">
+                    <h4>Countries API</h4>
+                    <h5>Web</h5><span class="more" data-toggle="modal" data-target="#countriesModal" id="countries_More">See More &raquo;</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Countries Modal-->
+              <div class="modal fade" id="countriesModal" role="dialog">
+                <div class="modal-dialog">
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button class="close modal-close" type="button" data-dismiss="modal" title="Close">×</button>
+                      <h4 class="modal-title project-name">Countries Information</h4>
+                    </div>
+                    <div class="modal-body">
+                      <div class="project-content-box">
+                        <div class="project-image-box"><img class="img-thumbnail project-details-image" src="img/portfolio/countries-1.PNG">
+                          <div class="image-arrow image-arrow-left fa fa-angle-left" title="Previous"></div>
+                          <div class="image-arrow image-arrow-right fa fa-angle-right" title="Next"></div>
+                          <div class="image-nav-wrapper">
+                            <div class="image-nav-box"><span class="image-nav active-nav" data-image-index="1"></span><span class="image-nav" data-image-index="2"></span><span class="image-nav" data-image-index="3"></span></div>
+                          </div>
+                        </div>
+                        <div class="project-text">
+                          <div class="project-description">
+                            <p class="description-header">Project Description</p>
+                            <p class="description-details">Search and find countries based on languages, timezones, population, region etc.<br><b>Some of its features are listed below:</b></p>
+                            <ul class="description-details project-features">
+                              <li>A Filter Search to look for a country from the result displayed.</li>
+                              <li>For each country result, the following are displayed: Name, Native name, Capital, Region, Subregion, Population, Demonym, Land Area, Timezones, Languages, Regional Blocs.</li>
+                              <li>Makes use of free APIs to fetch the country information.</li>
+                              <li>Displays the flag of each country result.</li>
+                              <li>Fully Responsive.</li>
+                            </ul>
+                          </div>
+                          <div class="project-languages">
+                            <p class="description-header">Project Languages</p>
+                            <ul class="description-details">
+                              <li>Javascript</li>
+                              <li>AngularJS</li>
+                              <li>HTML5/CSS3</li>
+                            </ul>
+                          </div>
+                          <p class="project-link-box"><a class="see-project-link" href="http://bellodamilola.altervista.org/countries/index.html" target="_blank">Click here to see Countries Information &raquo;</a></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-default modal-close" type="button" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 web portfolio_item_wrapper">
+                <div class="portfolio_item" id="scientific_calculator">
+                  <div class="portfolio_img"><i class="fa fa-angle-left arrow left-arrow" title="Previous"></i><img class="portfolio_image" src="img/portfolio/scientific-calculator-1.PNG" alt="Scientific Calculator Project Image"><i class="fa fa-angle-right arrow right-arrow" title="Next"></i></div>
+                  <div class="portfolio_title">
+                    <h4>Scientific Calculator</h4>
+                    <h5>Web</h5><span class="more" data-toggle="modal" data-target="#scientificCalculatorModal" id="scientificCalculator_More">See More &raquo;</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Scientific Calculator Modal-->
+              <div class="modal fade" id="scientificCalculatorModal" role="dialog">
+                <div class="modal-dialog">
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button class="close modal-close" type="button" data-dismiss="modal" title="Close">×</button>
+                      <h4 class="modal-title project-name">Scientific Calculator</h4>
+                    </div>
+                    <div class="modal-body">
+                      <div class="project-content-box">
+                        <div class="project-image-box"><img class="img-thumbnail project-details-image" src="img/portfolio/scientific-calculator-1.PNG">
+                          <div class="image-arrow image-arrow-left fa fa-angle-left" title="Previous"></div>
+                          <div class="image-arrow image-arrow-right fa fa-angle-right" title="Next"></div>
+                          <div class="image-nav-wrapper">
+                            <div class="image-nav-box"><span class="image-nav active-nav" data-image-index="1"></span><span class="image-nav" data-image-index="2"></span><span class="image-nav" data-image-index="3"></span></div>
+                          </div>
+                        </div>
+                        <div class="project-text">
+                          <div class="project-description">
+                            <p class="description-header">Project Description</p>
+                            <p class="description-details">A fully functional responsive scientific calculator.<br><b>Some of its features are listed below:</b></p>
+                            <ul class="description-details project-features">
+                              <li>Option to switch between standard and scientific calculator.</li>
+                              <li>Stores the history of all calculations which can be viewed and conituned from.</li>
+                              <li>For ease, you can use to keyboard to perform calculations typing on the numbers and operators you want.</li>
+                              <li>Fully Responsive.</li>
+                            </ul>
+                          </div>
+                          <div class="project-languages">
+                            <p class="description-header">Project Languages</p>
+                            <ul class="description-details">
+                              <li>Javascript</li>
+                              <li>HTML5/CSS3</li>
+                            </ul>
+                          </div>
+                          <p class="project-link-box"><a class="see-project-link" href="http://bellodamilola.altervista.org/calculator/index.html" target="_blank">Click here to see Scientific Calculator &raquo;</a></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-default modal-close" type="button" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 web portfolio_item_wrapper">
+                <div class="portfolio_item" id="fitdpattern">
+                  <div class="portfolio_img"><i class="fa fa-angle-left arrow left-arrow" title="Previous"></i><img src="img/portfolio/fit-d-pattern-1.PNG" alt="Fit The Pattern Project Image"><i class="fa fa-angle-right arrow right-arrow" title="Next"></i></div>
+                  <div class="portfolio_title"><a href="#">
+                      <h4>Fit-D-Pattern Puzzle Game</h4></a>
+                    <h5>Web</h5><span class="more" data-toggle="modal" data-target="#fitDPatternModal" id="fitDPattern_More">See More &raquo;</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Modal-->
+              <div class="modal fade" id="fitDPatternModal" role="dialog">
+                <div class="modal-dialog">
+                  <!-- Fit the pattern Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button class="close modal-close" type="button" data-dismiss="modal" title="Close">×</button>
+                      <h4 class="modal-title project-name">Fit-D-Pattern Puzzle Game</h4>
+                    </div>
+                    <div class="modal-body">
+                      <div class="project-content-box">
+                        <div class="project-image-box"><img class="img-thumbnail project-details-image" src="img/portfolio/fit-d-pattern-1.PNG">
+                          <div class="image-arrow image-arrow-left fa fa-angle-left" title="Previous"></div>
+                          <div class="image-arrow image-arrow-right fa fa-angle-right" title="Next"></div>
+                          <div class="image-nav-wrapper">
+                            <div class="image-nav-box"><span class="image-nav active-nav" data-image-index="1"></span><span class="image-nav" data-image-index="2"></span><span class="image-nav" data-image-index="3"></span></div>
+                          </div>
+                        </div>
+                        <div class="project-text">
+                          <div class="project-description">
+                            <p class="description-header">Project Description</p>
+                            <p class="description-details">A grid of 3x3 Tiles, move the tiles around the match the pattern randomly generated.<br><b>Some of its features are listed below:</b></p>
+                            <ul class="description-details project-features">
+                              <li>5 Levels. Difficulty increases as you progress.</li>
+                              <li>Move tiles around by clicking on the tile you intend to move or use the arrow keys on your keyboard.</li>
+                              <li>Options to reset the tiles.</li>
+                              <li>Fully Responsive.</li>
+                            </ul>
+                          </div>
+                          <div class="project-languages">
+                            <p class="description-header">Project Languages</p>
+                            <ul class="description-details">
+                              <li>Javascript</li>
+                              <li>HTML5/CSS3</li>
+                            </ul>
+                          </div>
+                          <p class="project-link-box"><a class="see-project-link" href="http://bellodamilola.altervista.org/fitdpattern/index.html" target="_blank">Click here to see Fit-D-Pattern Puzzle Game &raquo;</a></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-default modal-close" type="button" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 web portfolio_item_wrapper">
+                <div class="portfolio_item" id="find_the_penguins">
+                  <div class="portfolio_img"><i class="fa fa-angle-left arrow left-arrow" title="Previous"></i><img src="img/portfolio/find-the-penguins-1.PNG" alt="Find the Penguins project Image"><i class="fa fa-angle-right arrow right-arrow" title="Next"></i></div>
+                  <div class="portfolio_title">
+                    <h4>Find The Penguins</h4>
+                    <h5>Web</h5><span class="more" data-toggle="modal" data-target="#findThePenguinsModal" id="findThePenguins_More">See More &raquo;</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Find the penguins Modal-->
+              <div class="modal fade" id="findThePenguinsModal" role="dialog">
+                <div class="modal-dialog">
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button class="close modal-close" type="button" data-dismiss="modal" title="Close">×</button>
+                      <h4 class="modal-title project-name">Todo</h4>
+                    </div>
+                    <div class="modal-body">
+                      <div class="project-content-box">
+                        <div class="project-image-box"><img class="img-thumbnail project-details-image" src="img/portfolio/find-the-penguins-1.PNG">
+                          <div class="image-arrow image-arrow-left fa fa-angle-left" title="Previous"></div>
+                          <div class="image-arrow image-arrow-right fa fa-angle-right" title="Next"></div>
+                          <div class="image-nav-wrapper">
+                            <div class="image-nav-box"><span class="image-nav active-nav" data-image-index="1"></span><span class="image-nav" data-image-index="2"></span><span class="image-nav" data-image-index="3"></span></div>
+                          </div>
+                        </div>
+                        <div class="project-text">
+                          <div class="project-description">
+                            <p class="description-header">Project Description</p>
+                            <p class="description-details">Click on the Penguins as they pop up fast and randomly before Yeti finds you. The speed at which the penguins pop out increases as you play.<br><b>Some of its features are listed below:</b></p>
+                            <ul class="description-details project-features">
+                              <li>Interesting sounds as you click on the penguins.</li>
+                              <li>Option to turn off the sound.</li>
+                              <li>Option to pause and play.</li>
+                              <li>Highscore board.</li>
+                              <li>Fully Responsive.</li>
+                            </ul>
+                          </div>
+                          <div class="project-languages">
+                            <p class="description-header">Project Languages</p>
+                            <ul class="description-details">
+                              <li>Javascript</li>
+                              <li>HTML5/CSS3</li>
+                            </ul>
+                          </div>
+                          <p class="project-link-box"><a class="see-project-link" href="http://bellodamilola.altervista.org/whac-a-mole/index.html" target="_blank">Click here to see Find The Penguins &raquo;</a></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-default modal-close" type="button" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 web portfolio_item_wrapper">
+                <div class="portfolio_item" id="to_do_lists">
+                  <div class="portfolio_img"><i class="fa fa-angle-left arrow left-arrow" title="Previous"></i><img src="img/portfolio/to-do-list-1.PNG" alt="Todo List Project Image"><i class="fa fa-angle-right arrow right-arrow" title="Next"></i></div>
+                  <div class="portfolio_title">
+                    <h4>To-do Lists</h4>
+                    <h5>Web</h5><span class="more" data-toggle="modal" data-target="#todoListModal" id="todoList_More">See More &raquo;</span>
+                  </div>
+                </div>
+              </div>
+              <!-- To do lists Modal-->
+              <div class="modal fade" id="todoListModal" role="dialog">
+                <div class="modal-dialog">
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button class="close modal-close" type="button" data-dismiss="modal" title="Close">×</button>
+                      <h4 class="modal-title project-name">To do Lists</h4>
+                    </div>
+                    <div class="modal-body">
+                      <div class="project-content-box">
+                        <div class="project-image-box"><img class="img-thumbnail project-details-image" src="img/portfolio/to-do-list-1.PNG">
+                          <div class="image-arrow image-arrow-left fa fa-angle-left" title="Previous"></div>
+                          <div class="image-arrow image-arrow-right fa fa-angle-right" title="Next"></div>
+                          <div class="image-nav-wrapper">
+                            <div class="image-nav-box"><span class="image-nav active-nav" data-image-index="1"></span><span class="image-nav" data-image-index="2"></span><span class="image-nav" data-image-index="3"></span></div>
+                          </div>
+                        </div>
+                        <div class="project-text">
+                          <div class="project-description">
+                            <p class="description-header">Project Description</p>
+                            <p class="description-details">To-Do event list. Sign up to create groups and add events to it. Group could be Groceries, Buckelist. Depending on what you choose.<br><b>Some of its features are listed below:</b></p>
+                            <ul class="description-details project-features">
+                              <li>A single-page application that makes use of modals and AJAX requests on every CRUD operation without refreshing the page.</li>
+                              <li>A Basic grocery calculator.</li>
+                              <li>Sort based on ascending/descending order; Date due.</li>
+                              <li>A counter badge with the number of items in each group.</li>
+                              <li>There's the option to set due dates to task items. A <b>"DUE"</b> icon appears on the top right of tasks that are due.</li>
+                              <li>Clean and easy to use with legible fonts and adequate white spacing.</li>
+                            </ul>
+                          </div>
+                          <div class="project-languages">
+                            <p class="description-header">Project Languages</p>
+                            <ul class="description-details">
+                              <li>Javascript</li>
+                              <li>HTML5/CSS3</li>
+                              <li>PHP/MySQL</li>
+                            </ul>
+                          </div>
+                          <p class="project-link-box"><a class="see-project-link" href="http://bellodamilola.altervista.org/todo/index.html" target="_blank">Click here to see To do Lists &raquo;</a></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-default modal-close" type="button" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 web portfolio_item_wrapper">
+                <div class="portfolio_item" id="hangman">
+                  <div class="portfolio_img"><i class="fa fa-angle-left arrow left-arrow" title="Previous"></i><img src="img/portfolio/hangman-1.PNG" alt="Hangman Project Image"><i class="fa fa-angle-right arrow right-arrow" title="Next"></i></div>
+                  <div class="portfolio_title">
+                    <h4>Hangman Game</h4>
+                    <h5>Web</h5><span class="more" data-toggle="modal" data-target="#hangmanModal" id="hangman_More">See More &raquo;</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Hangman Game Modal-->
+              <div class="modal fade" id="hangmanModal" role="dialog">
+                <div class="modal-dialog">
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button class="close modal-close" type="button" data-dismiss="modal" title="Close">×</button>
+                      <h4 class="modal-title project-name">Hangman Game</h4>
+                    </div>
+                    <div class="modal-body">
+                      <div class="project-content-box">
+                        <div class="project-image-box"><img class="img-thumbnail project-details-image" src="img/portfolio/hangman-1.PNG">
+                          <div class="image-arrow image-arrow-left fa fa-angle-left" title="Previous"></div>
+                          <div class="image-arrow image-arrow-right fa fa-angle-right" title="Next"></div>
+                          <div class="image-nav-wrapper">
+                            <div class="image-nav-box"><span class="image-nav active-nav" data-image-index="1"></span><span class="image-nav" data-image-index="2"></span><span class="image-nav" data-image-index="3"></span></div>
+                          </div>
+                        </div>
+                        <div class="project-text">
+                          <div class="project-description">
+                            <p class="description-header">Project Description</p>
+                            <p class="description-detailsHangman">Word Game. Test your vocabulary knowledge, how much do you know flags of countries, Proverbs, Words spelling, Animal names, Vocabulary questions etc.? Try this Hangman Game.<br><b>Some of its features are listed below:</b></p>
+                            <ul class="description-details project-features">
+                              <li>Makes use of Local Storage to remember where you left off.</li>
+                              <li>Choose between playing a timed game (2 minutes) or not.</li>
+                              <li>Turn audio on or off.</li>
+                              <li>Option to increase font size for those with visual disability.</li>
+                              <li>Click on the alphabets to fill in the blanks or simply type using your keyboard/keypad.</li>
+                            </ul>
+                          </div>
+                          <div class="project-languages">
+                            <p class="description-header">Project Languages</p>
+                            <ul class="description-details">
+                              <li>Javascript</li>
+                              <li>HTML5/CSS3</li>
+                              <li>PHP/MySQL</li>
+                            </ul>
+                          </div>
+                          <p class="project-link-box"><a class="see-project-link" href="http://bellodamilola.altervista.org/hangman/index.html" target="_blank">Click here to see Hangman Game &raquo;</a></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-default modal-close" type="button" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="contact_area pad" id="contact">
+          <div class="main_title">
+            <h2>Contact Me</h2>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="left_contact_details wow fadeInUp animated">
+                <p>Feel free to contact me.</p>
+                <div class="media">
+                  <div class="media-left"><i class="fa fa-map-marker"></i></div>
+                  <div class="media-body">
+                    <h4>Address</h4>
+                    <p>Kitchener, ON, Canada</p>
+                  </div>
+                </div>
+                <div class="media">
+                  <div class="media-left"><i class="fa fa-phone"></i></div>
+                  <div class="media-body">
+                    <h4>Phone</h4>
+                    <p>+1 (437) 779 9250</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- ================End Total container Area =================-->
+    <!-- ================footer Area =================-->
+    <footer class="footer_area">
+      <div class="footer_inner">
+        <div class="container">
+          <ul class="social_icon">
+            <li><a class="linkedin-icon" href="https://linkedin.com/in/damilola-bello" target="_blank" title="LinkedIn"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer_copyright">
+        <div class="container">
+          <div class="pull-left">
+            <h5>
+              <p>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.-->Copyright ©
+                <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.-->
+              </p>
+            </h5>
+          </div>
+          <div class="pull-right">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active"><a class="main-nav-el-bottom" href="#about">ABOUT ME</a></li>
+              <li class="active"><a class="main-nav-el-bottom" href="#about">MY STORY</a></li>
+              <li><a class="main-nav-el-bottom" href="#skill">Skill</a></li>
+              <li><a class="main-nav-el-bottom" href="#education">Education</a></li>
+              <li><a class="main-nav-el-bottom" href="#portfolio">PORTFOLIO</a></li>
+              <li><a class="main-nav-el-bottom" href="#contact">CONTACT</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ================End footer Area =================-->
+    <div class="envalab-style-switch" id="switch-style">
+      <div class="switch-button" id="toggle-switcher" title="Open Colour Picker Tray"><i class="fa fa-gears"></i></div>
+      <div class="switched-options">
+        <div class="config-title">Color Panel </div>
+        <ul class="styles">
+          <li><a class="styles-color past" href="#" onclick="return setActiveStyleSheet(&quot;past&quot;),!1" title="past"></a></li>
+          <li><a class="styles-color orange" href="#" onclick="return setActiveStyleSheet(&quot;orange&quot;),!1" title="orange"></a></li>
+          <li><a class="styles-color pink" href="#" onclick="return setActiveStyleSheet(&quot;pink&quot;),!1" title="pink"></a></li>
+          <li><a class="styles-color violet" href="#" onclick="return setActiveStyleSheet(&quot;violet&quot;),!1" title="violet"></a></li>
+          <li><a class="styles-color blue" href="#" onclick="return setActiveStyleSheet(&quot;blue&quot;),!1" title="blue"></a></li>
+          <li><a class="styles-color yellow" href="#" onclick="return setActiveStyleSheet(&quot;yellow&quot;),!1" title="yellow"></a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins)-->
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed-->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Extra plugin js-->
+    <script src="vendors/counter-up/waypoints.min.js"></script>
+    <script src="vendors/counter-up/jquery.counterup.min.js"></script>
+    <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+    <script src="vendors/isotope/isotope.pkgd.min.js"></script>
+    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="vendors/style-switcher/styleswitcher.js"></script>
+    <script src="vendors/style-switcher/switcher-active.js"></script>
+    <script src="vendors/animate-css/wow.min.js"></script>
+    <!-- contact js-->
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/theme.js"></script>
+    <!-- Changes I made to the theme-->
+    <script src="js/main-edit.js"></script>
   </body>
 </html>
