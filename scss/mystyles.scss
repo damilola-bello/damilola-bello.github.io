@@ -454,6 +454,15 @@ body.dark_bg {
   background: #777 !important;
 }
 //End of Necessary overwrite
+.left_contact_details {
+  margin: 0 auto 10px;
+  max-width: 400px;
+}
+#job-title {
+  font-size: 2.1rem;
+  font-weight: 600;
+  padding: 10px 0px;
+}
 
 @media only screen and (max-width: 991px) {
 	.portfolio_item_wrapper {
