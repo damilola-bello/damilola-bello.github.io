@@ -310,7 +310,14 @@ button.close {
 		}
 	}
 }
-
+.spinner {
+  background: -webkit-linear-gradient(top, #26b7e7 10%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to bottom, #26b7e7 10%, rgba(255, 255, 255, 0) 100%);
+}
+.spinner:before {
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 50%, #26b7e7 50%);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, #26b7e7 50%);
+}
 .project-name {
 	font-size: 2.4em;
 }
